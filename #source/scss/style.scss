@@ -1,0 +1,484 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins.scss";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+@font-face {
+	font-family: "segoeRegular";
+	src: url("../fonts/segoeui.eot");
+	src: local("☺"), url("../fonts/segoeui.woff") format("woff"), url("../fonts/segoeui.ttf") format("truetype"),
+		url("../fonts/segoeui.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MrsEavesItalic";
+	src: url("../fonts/MrsEavesOT-Italic.eot");
+	src: local("☺"), url("../fonts/MrsEavesOT-Italic.woff") format("woff"),
+		url("../fonts/MrsEavesOT-Italic.ttf") format("truetype"), url("../fonts/MrsEavesOT-Italic.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "segoeLight";
+	src: url("../fonts/segoeuil.eot");
+	src: local("☺"), url("../fonts/segoeuil.woff") format("woff"), url("../fonts/segoeuil.ttf") format("truetype"),
+		url("../fonts/segoeuil.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+/*@font-face {
+	font-family: 'segoebold';
+	src: url('../fonts/segoeuib.eot');
+	src: local('☺'), url('../fonts/segoeuib.woff') format('woff'), url('../fonts/segoeuib.ttf') format('truetype'), url('../fonts/segoeuib.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+@font-face {
+	font-family: "segoebold";
+	src: url("../fonts/segoeuib_0.eot");
+	src: local("☺"), url("../fonts/segoeuib_0.woff") format("woff"), url("../fonts/segoeuib_0.ttf") format("truetype"),
+		url("../fonts/segoeuib_0.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "segoeSemiBold";
+	src: url("../fonts/seguisb.eot");
+	src: local("☺"), url("../fonts/seguisb.woff") format("woff"), url("../fonts/seguisb.ttf") format("truetype"),
+		url("../fonts/seguisb.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "UniversLight";
+	src: url("../fonts/Univers CE 45 Light.eot");
+	src: local("☺"), url("../fonts/Univers CE 45 Light.woff") format("woff"),
+		url("../fonts/Univers CE 45 Light.ttf") format("truetype"), url("../fonts/Univers CE 45 Light.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "ArialLight";
+	src: url("../fonts/Univers CE 45 Light.eot");
+	src: local("☺"), url("../fonts/Univers CE 45 Light.woff") format("woff"),
+		url("../fonts/Univers CE 45 Light.ttf") format("truetype"), url("../fonts/Univers CE 45 Light.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MyriadProRegular";
+	src: url("../fonts/MyriadPro-Regular.eot");
+	src: local("☺"), url("../fonts/MyriadPro-Regular.woff") format("woff"),
+		url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "MyriadProSemibold";
+	src: url("../fonts/MyriadPro-Semibold.eot");
+	src: local("☺"), url("../fonts/MyriadPro-Semibold.woff") format("woff"),
+		url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+//<Подключаем шрифты>=======================================================================================
+
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily: "segoeRegular";
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minwidth: 320px;
+$mw: 1023;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null.scss";
+body {
+	color: #000;
+	font-size: 14px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	&.loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container {
+	max-width: $mw + px;
+	margin: 0 auto;
+	width: 100%;
+	/*@media (max-width: $md1+px) {
+		max-width: 970px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}*/
+}
+
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+//@import "forms.scss";
+//@import "ui.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "../../js/fancybox/jquery.fancybox.scss";
+//@import "datepicker.scss";
+//@import "fontawesome.scss";
+//@import "popover.min.scss";
+//@import "baguetteBox.scss";
+//@import "pagging.scss";
+//@import "icons.scss";
+//@import "popup.scss";
+@import "header.scss";
+@import "footer.scss";
+//@import "home.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	/*align-items: flex-start;*/ /*если adaptiveHeight: true*/
+}
+.banner {
+	margin: -293px 0 0 0;
+}
+.banner-slider__item {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 0 35px 0 0;
+}
+
+.banner-slider {
+	position: relative;
+	z-index: 10;
+}
+.banner-slider__icon {
+	z-index: 10;
+}
+.banner-slider .slick-arrow {
+	position: absolute;
+	top: 88px;
+
+	z-index: 10;
+	font-size: 0;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #fff;
+	opacity: 0.3;
+}
+.banner-slider .slick-arrow.slick-prev {
+	left: 52px;
+	background: url("../img/banner/arr_l.svg") 50% no-repeat;
+}
+.banner-slider .slick-arrow.slick-next {
+	right: 52px;
+	background: url("../img/banner/arr_r.svg") 50% no-repeat;
+}
+.banner-slider .slick-arrow.slick-disabled {
+	opacity: 0.1;
+}
+.banner-slider__icon {
+	margin: 0 55px 0 0;
+}
+.banner-slider__text {
+	margin: 59px 0 0 13px;
+	text-align: left;
+	h2 {
+		font-size: 65px;
+		color: #fff;
+		font-family: MyriadProSemibold;
+	}
+	p {
+		font-family: segoeLight;
+		margin: 0 0 0 0;
+		font-size: 45px;
+		color: #fff;
+	}
+}
+
+.banner-slider__button {
+	width: 146px;
+	height: 46px;
+	margin: 30px 0 0 0;
+	background-color: #12b367;
+	border: 4px solid #2a312c;
+	border-radius: 3px;
+	opacity: 0.41;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner-slider__btn {
+	font-family: "segoeLight";
+	opacity: 1;
+	color: #ffffff;
+	font-size: 23px;
+	opacity: 1;
+}
+
+.main-tabs {
+	margin: 25px 0 0 0;
+}
+.main-tabs__links {
+	display: flex;
+}
+.main-tabs__link {
+	font-family: segoeLight;
+	padding: 30px 0 0 0;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 1 0 25%;
+	border-bottom: 1px solid #dedede;
+}
+.main-tabs__link:target {
+	display: block;
+}
+.main-tabs__link:hover {
+	cursor: pointer;
+}
+.main-tabs__link.active {
+	font-family: segoeRegular;
+	border-bottom: none;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+}
+
+.main-tabs__link-icon {
+	width: 137px;
+	height: 157px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-tabs__link-title {
+	padding: 15px 0;
+	text-align: center;
+	line-height: 1.2;
+	color: #5c5b5b;
+	h3 {
+		font-size: 27px;
+	}
+	p {
+		font-size: 23px;
+	}
+}
+.main-tabs__link:nth-child(1) > .main-tabs__link-icon {
+	background: url(../img/main-tabs/main-tabs__links/layer_1.svg) 50% no-repeat;
+}
+.main-tabs__link:nth-child(2) > .main-tabs__link-icon {
+	background: url(../img/main-tabs/main-tabs__links/layer_2.svg) 50% no-repeat;
+}
+.main-tabs__link:nth-child(3) > .main-tabs__link-icon {
+	background: url(../img/main-tabs/main-tabs__links/layer_3.svg) 50% no-repeat;
+}
+.main-tabs__link:nth-child(4) > .main-tabs__link-icon {
+	background: url(../img/main-tabs/main-tabs__links/layer_4.svg) 50% no-repeat;
+}
+
+.main-tabs__content {
+	display: none;
+	padding: 0 55px 0 55px;
+	border-bottom: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+.main-tabs__content.active {
+	display: block;
+}
+/*.main-tabs__content:target{
+	display: block;
+}*/
+.main-tabs__content-image {
+	text-align: center;
+	padding: 55px 0;
+}
+.main-tabs__content-title {
+	font-family: "segoeLight";
+	font-size: 38.7px;
+	line-height: 1.2;
+	font-weight: 300;
+	color: #4f4f4f;
+}
+.main-tabs__content-text {
+	padding: 28px 0 72px 0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #818181;
+	font-family: "UniversLight";
+	word-wrap: break-word;
+}
+.why {
+	padding: 16px 0 56px 0;
+	display: flex;
+
+	margin: 0 -100px 0 0;
+}
+
+.why__screen-shot {
+	margin: 0 40px 0 -18px;
+}
+.why__text {
+	padding: 21px 0 0 0;
+}
+.why__text__title {
+	h3 {
+		font-family: "segoeLight";
+		font-size: 33px;
+		line-height: 1.2;
+		font-weight: 300;
+		color: #4f4f4f;
+	}
+}
+.why__text__list {
+	padding: 22px 0 0 0;
+	li {
+		background: url("../img/why/why__text/why__text__list/01.svg") left no-repeat;
+		padding-left: 30px;
+	}
+	font-family: UniversLight;
+	font-size: 16px;
+	line-height: 38px;
+	font-weight: 300;
+	color: #8a8888;
+}
+
+.forms {
+	display: flex;
+	justify-content: space-between;
+	padding: 22px 0 0 0;
+}
+.forms__login,
+.forms__subscribe {
+	width: 470px;
+	height: 109px;
+	border-radius: 5px;
+}
+.forms__login {
+	background-color: #e67624;
+}
+.forms__login__title,
+.forms__subscribe__title {
+	font-size: 28px;
+	font-family: "segoeLight";
+	font-weight: 300;
+	color: #ffffff;
+	padding: 12px 0 19px 28px;
+}
+.forms__subscribe {
+	background-color: #01d4f3;
+}
+
+.form-block {
+	height: 0;
+	display: flex;
+}
+.form-block__item {
+	margin: 0 14px 20px 28px;
+
+	.input {
+		font-family: "segoeLight";
+		width: 155px;
+		font-size: 16px;
+		font-weight: 300;
+		color: #4f4f4f;
+		padding: 3px 0 3px 13px;
+		border: 2px solid #e67624;
+	}
+}
+.form-block__item:nth-child(2) {
+	padding: 0;
+	margin: 0;
+}
+.contacts-content-form-button {
+}
+.forms__login__btn {
+	font-family: "segoeLight";
+	background-color: #444444;
+	margin: 0 0 0 11px;
+	width: 94px;
+	height: 30px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #ffffff;
+	padding: 0;
+}
+
+.input.err {
+	border: 2px solid red;
+}
+.forms__subscribe {
+	margin: 0 14px 0 0;
+	.form-block__item {
+		.input {
+			font-family: "segoeLight";
+			width: 266px;
+			font-size: 16px;
+			font-weight: 300;
+			color: #4f4f4f;
+			padding: 3px 0 3px 13px;
+			border: 2px solid #01d4f3;
+		}
+		.input.err {
+			border: 2px solid red;
+		}
+	}
+}
+
+.forms__subscribe__btn {
+	font-family: "segoeLight";
+	width: 111px;
+	height: 30px;
+	background-color: #029bb1;
+	font-size: 16px;
+	font-weight: 300;
+	color: #ffffff;
+	padding: 0;
+	margin: 0 0 0 35px;
+}
+
+//====================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
