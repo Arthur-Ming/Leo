@@ -1,97 +1,108 @@
-footer {
+.footer {
 	width: 100%;
 	margin: 35px 0 0 0;
 	background-color: #2c2e25;
 	@media (max-width: $md1+px) {
 		padding: 0px 0px 20px 0px;
 	}
+
+	&__body {
+		display: flex;
+		padding: 24px 0 46px 47px;
+		@media (max-width: $md1+px) {
+			flex-wrap: wrap;
+			padding: 24px 0 0px 47px;
+		}
+	}
+	&__column {
+		@media (max-width: $md1+px) {
+			padding: 0px 10px 0px 60px;
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $md2+px) {
+			padding: 0px 0px 0px 30px;
+		}
+		@media (max-width: $md3+px) {
+			padding: 0px;
+		}
+	}
+	&__column:nth-child(1) {
+		flex: 0 0 191px;
+		@media (max-width: $md1+px) {
+			flex: 0 0 50%;
+		}
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+	&__column:nth-child(2) {
+		flex: 0 0 191px;
+		@media (max-width: $md1+px) {
+			flex: 0 0 50%;
+		}
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+	&__column:nth-child(3) {
+		flex: 0 0 360px;
+		@media (max-width: $md1+px) {
+			flex: 0 0 52%;
+		}
+		@media (max-width: $md3+px) {
+			flex: 0 0 60%;
+		}
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+	&__column:nth-child(4) {
+		@media (max-width: $md1+px) {
+			flex: 0 0 48%;
+		}
+		@media (max-width: $md3+px) {
+			flex: 0 0 40%;
+		}
+		@media (max-width: $md4+px) {
+			flex: 0 0 100%;
+		}
+	}
+
+	&__title {
+		font-family: "segoeLight";
+		margin: 0 0 5px 0;
+		font-size: 22px;
+		line-height: 33px;
+		font-weight: 300;
+		color: #ffffff;
+	}
+
+	&__item {
+		opacity: 0.5;
+		font-family: "ArialLight";
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+
+	&__adress {
+		margin: 10px 0 0 0;
+		opacity: 0.8;
+		font-family: "ArialLight";
+		font-size: 13px;
+		line-height: 22px;
+		font-weight: 400;
+		color: #ffffff;
+		@media (max-width: $md2+px) {
+			padding: 0px 0px 0px 10px;
+		}
+	}
 }
 
-.footer__body {
-	display: flex;
-	padding: 24px 0 46px 47px;
-	@media (max-width: $md1+px) {
-		flex-wrap: wrap;
-		padding: 24px 0 0px 47px;
-	}
-}
-
-.footer__column:nth-child(1) {
-	flex: 0 0 191px;
-	@media (max-width: $md1+px) {
-		flex: 0 0 50%;
-	}
-	@media (max-width: $md4+px) {
-		flex: 0 0 100%;
-	}
-}
-.footer__column:nth-child(2) {
-	flex: 0 0 191px;
-	@media (max-width: $md1+px) {
-		flex: 0 0 50%;
-	}
-	@media (max-width: $md4+px) {
-		flex: 0 0 100%;
-	}
-}
-.footer__column:nth-child(3) {
-	flex: 0 0 360px;
-	@media (max-width: $md1+px) {
-		flex: 0 0 52%;
-	}
-	@media (max-width: $md3+px) {
-		flex: 0 0 60%;
-	}
-	@media (max-width: $md4+px) {
-		flex: 0 0 100%;
-	}
-}
-.footer__column:nth-child(4) {
-	@media (max-width: $md1+px) {
-		flex: 0 0 48%;
-	}
-	@media (max-width: $md3+px) {
-		flex: 0 0 40%;
-	}
-	@media (max-width: $md4+px) {
-		flex: 0 0 100%;
-	}
-}
-.footer__column {
-	@media (max-width: $md1+px) {
-		padding: 0px 10px 0px 60px;
-		margin: 0px 0px 20px 0px;
-	}
-	@media (max-width: $md2+px) {
-		padding: 0px 0px 0px 30px;
-	}
-	@media (max-width: $md3+px) {
-		padding: 0px;
-	}
-}
-
-.footer__column__title {
-	font-family: "segoeLight";
-	margin: 0 0 5px 0;
-	font-size: 22px;
-	line-height: 33px;
-	font-weight: 300;
-	color: #ffffff;
-}
-.footer__column__item {
-	opacity: 0.5;
-	font-family: "ArialLight";
-	font-size: 13px;
-	line-height: 22px;
-	font-weight: 400;
-	color: #ffffff;
-}
-
-.footer__logo {
-	margin: 22px 0 0 2px;
-	p {
-		font-size: 118px;
-		font-family: "MrsEavesItalic";
+.logo {
+	&_footer {
+		margin: 22px 0 0 2px;
 		opacity: 0.21;
 		color: #ffffff;
 		@media (max-width: $md2+px) {
@@ -101,23 +112,9 @@ footer {
 		@media (max-width: $md3+px) {
 			font-size: 60px;
 		}
-	}
-	@media (max-width: $md4+px) {
-		margin: 0;
-	}
-}
-.footer__adress {
-	margin: 10px 0 0 0;
-	opacity: 0.8;
-	font-family: "ArialLight";
-	font-size: 13px;
-	line-height: 22px;
-	font-weight: 400;
-	color: #ffffff;
-	@media (max-width: $md2+px) {
-		padding: 0px 0px 0px 10px;
-	}
-}
-//====================================================================================================
 
-//====================================================================================================
+		@media (max-width: $md4+px) {
+			margin: 0;
+		}
+	}
+}

@@ -13,11 +13,11 @@ $(document).ready(function () {
 /* ==== Табы === */
 $('.main-tabs__links').on('click', '.main-tabs__link', function (event) {
 
-  $('.main-tabs__link').removeClass('active');
-  $(this).addClass('active');
+  $('.main-tabs__link').removeClass('main-tabs__link_active');
+  $(this).addClass('main-tabs__link_active');
 
-  $('.main-tabs__content').removeClass('active');
-  $('#' + $(this).attr('data-link')).addClass('active');
+  $('.main-tabs-content').removeClass('main-tabs-content_active');
+  $('#' + $(this).attr('data-link')).addClass('main-tabs-content_active');
 
 });
 
@@ -35,9 +35,9 @@ function ibg() {
 
 ibg();
 /* ==== Бургер === */
-$('.menu-header__burger').on('click', function (event) {
+$('.header__menu-burger').on('click', function (event) {
   $('.header-menu').toggleClass('active');
-  $('.menu-header__burger').toggleClass('bl');
+  $('.header__menu-burger').toggleClass('header__menu-burger_black');
   $('body').toggleClass('lock');
 });
 
