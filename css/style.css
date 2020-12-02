@@ -299,6 +299,9 @@ body.lock {
 	margin: 0 46px 0 0;
 	font-size: 23px;
 	color: #fff;
+	-webkit-transition: color 0.3s ease 0s;
+	-o-transition: color 0.3s ease 0s;
+	transition: color 0.3s ease 0s;
 }
 @media (max-width: 991.98px) {
 	.header-menu__link {
@@ -312,6 +315,12 @@ body.lock {
 		color: black;
 		padding: 10px 0 10px 0;
 	}
+}
+.header-menu__link:hover {
+	color: #b7babb;
+	-webkit-transition: color 0.3s ease 0s;
+	-o-transition: color 0.3s ease 0s;
+	transition: color 0.3s ease 0s;
 }
 .header-menu__link:last-child {
 	margin: 0px;
@@ -457,6 +466,9 @@ body.lock {
 	font-weight: 400;
 	color: #ffffff;
 }
+.footer__item:hover {
+	opacity: 0.8;
+}
 .footer__adress {
 	margin: 10px 0 0 0;
 	opacity: 0.8;
@@ -571,7 +583,6 @@ body.lock {
 	font-size: 0;
 	width: 50px;
 	height: 50px;
-	background-color: #fff;
 	border-radius: 50%;
 	background-color: transparent;
 	border: 2px solid #fff;
@@ -708,6 +719,11 @@ body.lock {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 @media (max-width: 767.98px) {
 	.banner-slider__button {
@@ -720,6 +736,17 @@ body.lock {
 	color: #ffffff;
 	font-size: 23px;
 	padding: 5px 0 0 0;
+}
+
+.banner-slider__button:hover {
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 
 .main-tabs {
@@ -1039,7 +1066,7 @@ body.lock {
 }
 .forms__login, .forms__subscribe {
 	width: 470px;
-	height: 109px;
+	min-height: 109px;
 	border-radius: 5px;
 }
 @media (max-width: 991.98px) {
@@ -1055,7 +1082,6 @@ body.lock {
 @media (max-width: 479.98px) {
 	.forms__login, .forms__subscribe {
 		width: 95%;
-		height: 200px;
 	}
 }
 .forms__login {
@@ -1116,7 +1142,7 @@ body.lock {
 @media (max-width: 479.98px) {
 	.forms__subscribe {
 		width: 95%;
-		height: 160px;
+		min-height: 160px;
 	}
 }
 .forms__subscribe .forms__item {
@@ -1177,11 +1203,25 @@ body.lock {
 	font-weight: 300;
 	color: #ffffff;
 	padding: 0;
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 @media (max-width: 479.98px) {
 	.button_login {
 		margin: 0 14px 20px 0;
 	}
+}
+.button_login:hover {
+	-webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 .button_subscribe {
 	font-family: "segoeLight";
@@ -1193,9 +1233,23 @@ body.lock {
 	color: #ffffff;
 	padding: 0;
 	margin: 0 0 0 35px;
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
 @media (max-width: 479.98px) {
 	.button_subscribe {
 		margin: 0 14px 20px 0;
 	}
+}
+.button_subscribe:hover {
+	-webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+	-webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+	transition: -webkit-box-shadow 0.3s ease 0s;
+	-o-transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s;
+	transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
 }
